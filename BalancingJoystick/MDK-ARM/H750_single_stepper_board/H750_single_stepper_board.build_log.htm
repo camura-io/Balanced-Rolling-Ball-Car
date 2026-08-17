@@ -1,0 +1,133 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A ASUS, A, LIC=ZB4EI-TWPRT-IIS5V-P3TSY-JMC3D-7W9K0
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\keil\program\ °»¸ÕÍ»¸∞Ê\H750_single_stepper_boardduan\MDK-ARM\H750_single_stepper_board.uvprojx
+Project File Date:  08/03/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil\ARM\ARMCC\Bin'
+Rebuild target 'H750_single_stepper_board'
+assembling startup_stm32h750xx.s...
+compiling ball_balance_profile.c...
+compiling stm32h7xx_it.c...
+compiling stm32h7xx_hal_hsem.c...
+compiling stm32h7xx_hal_mdma.c...
+compiling app_k230.c...
+compiling stm32h7xx_hal_cortex.c...
+compiling stm32h7xx_hal_msp.c...
+compiling OLED.c...
+compiling stm32h7xx_hal_flash.c...
+compiling stm32h7xx_hal_pwr.c...
+compiling imu901.c...
+compiling tim.c...
+compiling i2c.c...
+compiling icm42688.c...
+compiling usart.c...
+compiling spi.c...
+compiling main.c...
+../Src/main.c(3212): warning:  #177-D: variable "imu_error"  was declared but never referenced
+    int32_t imu_error;
+../Src/main.c(410): warning:  #550-D: variable "g_pid_integral"  was set but never used
+  static int32_t g_pid_integral;
+../Src/main.c(411): warning:  #550-D: variable "g_pid_last_error"  was set but never used
+  static int16_t g_pid_last_error;
+../Src/main.c(440): warning:  #550-D: variable "g_icm_axis_acc_mg"  was set but never used
+  static int16_t g_icm_axis_acc_mg;   /* ÁÆ?Â≠?Ê≤?XËΩ?Ôº?AX‰Ω?‰∏?ËΩ?Âê?Âä?ÈÄ?Â∫?„Ä? */
+../Src/main.c(442): warning:  #550-D: variable "g_ms901m_axis_acc_mg"  was set but never used
+  static int16_t g_ms901m_axis_acc_mg; /* MS901MÈÄ?ÂÆ?ËΩ?Âê?Âä?ÈÄ?Â∫?Ôº?Âç?‰Ω?mg„Ä? */
+../Src/main.c(452): warning:  #550-D: variable "g_icm_acc_jump_count"  was set but never used
+  static uint8_t g_icm_acc_jump_count;
+../Src/main.c(459): warning:  #550-D: variable "g_imu_zero_acc_sum"  was set but never used
+  static int32_t g_imu_zero_acc_sum;
+../Src/main.c(460): warning:  #550-D: variable "g_imu_acc_zero_mg"  was set but never used
+  static int16_t g_imu_acc_zero_mg;
+../Src/main.c(461): warning:  #550-D: variable "g_imu_level_integral_mg"  was set but never used
+  static int32_t g_imu_level_integral_mg;
+../Src/main.c(462): warning:  #550-D: variable "g_imu_level_last_error_mg"  was set but never used
+  static int16_t g_imu_level_last_error_mg;
+../Src/main.c(465): warning:  #550-D: variable "g_ms901m_level_error_cd"  was set but never used
+  static int32_t g_ms901m_level_error_cd;
+../Src/main.c(1759): warning:  #177-D: function "BallTask_Control20ms"  was declared but never referenced
+  static void BallTask_Control20ms(int16_t error, int32_t abs_error, int32_t velocity,
+../Src/main.c(952): warning:  #177-D: function "BallLevel_Process20ms"  was declared but never referenced
+  static int32_t BallLevel_Process20ms(void)
+../Src/main.c(3047): warning:  #177-D: function "App_UpdateIcmSnapshot"  was declared but never referenced
+  static void App_UpdateIcmSnapshot(void)
+../Src/main.c(816): warning:  #177-D: function "Motor_RunSpeed"  was declared but never referenced
+  static void Motor_RunSpeed(uint8_t dir, uint16_t rpm)
+../Src/main.c(2806): warning:  #177-D: function "Mpu6050_Init"  was declared but never referenced
+  static HAL_StatusTypeDef Mpu6050_Init(void)
+../Src/main.c(2828): warning:  #177-D: function "Mpu6050_Read"  was declared but never referenced
+  static void Mpu6050_Read(void)
+../Src/main.c(2867): warning:  #177-D: function "App_IcmRawToDps"  was declared but never referenced
+  static int16_t App_IcmRawToDps(int16_t raw)
+../Src/main.c: 18 warnings, 0 errors
+compiling gpio.c...
+compiling stm32h7xx_hal_gpio.c...
+compiling stm32h7xx_hal_pwr_ex.c...
+compiling stm32h7xx_hal_flash_ex.c...
+compiling stm32h7xx_hal_rcc.c...
+compiling stm32h7xx_hal_rcc_ex.c...
+compiling stm32h7xx_hal_dma_ex.c...
+compiling stm32h7xx_hal_dma.c...
+compiling stm32h7xx_hal_spi_ex.c...
+compiling stm32h7xx_hal.c...
+compiling stm32h7xx_hal_i2c_ex.c...
+compiling stm32h7xx_hal_uart_ex.c...
+compiling system_stm32h7xx.c...
+compiling stm32h7xx_hal_exti.c...
+compiling stm32h7xx_hal_spi.c...
+compiling stm32h7xx_hal_tim_ex.c...
+compiling stm32h7xx_hal_uart.c...
+compiling stm32h7xx_hal_i2c.c...
+compiling stm32h7xx_hal_tim.c...
+linking...
+Program Size: Code=34050 RO-data=2618 RW-data=368 ZI-data=3008  
+FromELF: creating hex file...
+"H750_single_stepper_board\H750_single_stepper_board.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32H7xx_DFP.2.3.1.pack
+                Keil.STM32H7xx_DFP.2.3.1
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_H750_single_stepper_board
+  D:\keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\keil\ARM\PACK\Keil\STM32H7xx_DFP\2.3.1\Drivers\CMSIS\Device\ST\STM32H7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:19
+</pre>
+</body>
+</html>
